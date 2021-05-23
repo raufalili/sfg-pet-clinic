@@ -3,9 +3,11 @@ package com.raufali.sfgpetclinic.services.map;
 import com.raufali.sfgpetclinic.model.Owner;
 import com.raufali.sfgpetclinic.services.CrudService;
 import com.raufali.sfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Owner findByLastName(String lastName) {
